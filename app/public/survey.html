@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey - Friend Finder</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Reservation Page -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Survey Questions</h2>
+            <a href="/"><button class="btn btn-md btn-primary"><span class="fa fa-home-alt"></span>Home</button></a>
+            <hr>
+          </div>
+          <div class="card-body">
+            <form role="form">
+              <div class="form-group">
+                    <label for="user-name">Name (Required)</label>
+                    <input type="text" class="form-control" id="user-name">
+              </div>
+              <div class="custom-file">
+                    <label for="user-img">Link to Photo Image (Required)</label>
+                    <input type="text" class="form-control" id="user-img">
+                    <!-- <label class="custom-file-label" for="user-img">Link to Photo Image (Required)</label>
+                    <input type="file" class="custom-file-input" id="user-img"> -->
+              </div>
+              <br>
+              <br>
+              <hr>
+              <br>
+              <h4>Question 1</h4>
+              <p>On occassion, I quack.</p>
+              <select id='q1' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <h4>Question 2</h4>
+              <p>I was born in the right time era but I would have been a badass ninja.</p>
+              <select id='q-2' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <h4>Question 3</h4>
+              <p>I strongly agree with disagreeing with others who strongly disagree about agreeing with this statement.</p>
+              <select id='q-3' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <h4>Question 4</h4>
+              <p>Yeah, maybe no.</p>
+              <select id='q-4' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <h4>Question 5</h4>
+              <p>These aren't even questions.</p>
+              <select id='q-5' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <h4>Question 6</h4>
+              <p>I wouldn't mind owning a parrot to roleplay as a pirate sometimes.</p>
+              <select id='q-6' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <h4>Question 7</h4>
+              <p>Cheese.</p>
+              <select id='q-7' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <h4>Question 8</h4>
+              <p>I'm more confused than I let on.</p>
+              <select id='q-8' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <h4>Question 9</h4>
+              <p>I will defininetly, for sure, be more productive tomorrow.</p>
+              <select id='q-9' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <h4>Question 10</h4>
+              <p>I regret taking this survey.</p>
+              <select id='q-10' class="custom-select custom-select-sm query">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1 (strongly disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5(strongly agree)</option>
+                  </select>
+              <br>
+              <br>
+              <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends Link</a>
+        
+      </div>
+    </footer>
+    <br>
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+    
+  $(".submit").on("click", function(event) {
+    event.preventDefault();
+    var surveyArr = []
+    var showAlert = false
+    var elems = document.querySelectorAll('.query')
+    
+    elems.forEach(function(el){
+        if (el.options[el.selectedIndex].value === 'Open this select menu') {
+            showAlert = true
+        } else if ($("#user-name").val().trim() === '' || $("#user-img").val().trim() === '') {
+            showAlert = true
+        } else {
+            surveyArr.push(el.options[el.selectedIndex].value)
+        }
+        
+    })
+
+    
+
+    var userInput = {
+      userName: $("#user-name").val().trim(),
+      userImg: $("#user-img").val().trim(),      
+      userAnswers: surveyArr
+    }
+
+    if (showAlert) {
+        alert('Please enter all fields.')
+        //userInput.pop()
+        showAlert = false
+    }
+
+    //console.log(userInput);
+
+    $.post("/api/friends", userInput,
+    function(data) {
+      console.log(data)
+
+    })
+})
+</script>
