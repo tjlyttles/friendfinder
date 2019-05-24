@@ -1,16 +1,17 @@
 {
   "name": "friendfinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Answer survey questions that matches with potential friends who answered similarly.",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tjlyttles/friendfinder.git"
   },
-  "author": "",
+  "author": "Terrance Lyttles",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tjlyttles/friendfinder/issues"
