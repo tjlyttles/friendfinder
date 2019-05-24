@@ -130,7 +130,7 @@
                   </select>
               <br>
               <h4>Question 9</h4>
-              <p>I will defininetly, for sure, be more productive tomorrow.</p>
+              <p>I will definitely, for sure, be more productive tomorrow.</p>
               <select id='q-9' class="custom-select custom-select-sm query">
                     <option selected>Open this select menu</option>
                     <option value="1">1 (strongly disagree)</option>
@@ -152,7 +152,7 @@
                   </select>
               <br>
               <br>
-              <button type="submit" class="btn btn-primary submit">Submit</button>
+              <button type="submit" data-toggle="modal" data-target="#exampleModalLong" class="btn btn-primary submit">Submit</button>
             </form>
           </div>
         </div>
@@ -169,6 +169,24 @@
     <br>
 
   </div>
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Here are your matches!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
@@ -176,44 +194,51 @@
 
 
 <script type="text/javascript">
-    
+
+ 
   $(".submit").on("click", function(event) {
     event.preventDefault();
     var surveyArr = []
     var showAlert = false
     var elems = document.querySelectorAll('.query')
+    var data
     
+
+
     elems.forEach(function(el){
-        if (el.options[el.selectedIndex].value === 'Open this select menu') {
+        if ($("#user-name").val().trim() === '' || $("#user-img").val().trim() === '') {
             showAlert = true
-        } else if ($("#user-name").val().trim() === '' || $("#user-img").val().trim() === '') {
+        } else if (el.options[el.selectedIndex].value === 'Open this select menu') {
             showAlert = true
         } else {
             surveyArr.push(el.options[el.selectedIndex].value)
+            
         }
-        
     })
-
-    
-
-    var userInput = {
-      userName: $("#user-name").val().trim(),
-      userImg: $("#user-img").val().trim(),      
-      userAnswers: surveyArr
-    }
 
     if (showAlert) {
         alert('Please enter all fields.')
-        //userInput.pop()
+        userInput.pop()
         showAlert = false
     }
 
-    //console.log(userInput);
+    var userInput = {
+        name: $("#user-name").val().trim(),
+        photo: $("#user-img").val().trim(),      
+        scores: surveyArr
+    }
 
+    //console.log(userInput);
+    
     $.post("/api/friends", userInput,
     function(data) {
       console.log(data)
-
+      for (var i = 0; i < data.length; i++) {
+        $('.modal-body').append(`<strong>` +  data[i].name + `</strong><br><button type="button" class="btn btn-primary" >Add to friends list!</button><br><br>` + `<img src=` + data[i].photo + `><br>____________________________________________________________________<br>`)
+      }
+      
+      
     })
+    
 })
 </script>

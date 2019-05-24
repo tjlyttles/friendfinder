@@ -111,38 +111,6 @@ var userArray = [
         "2",
         "3"
         ]
-        },
-        {
-        "name": "tabitha",
-        "photo": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F248797%2Fpexels-photo-248797.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D1%26w%3D500&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fnature%2F&docid=ShwNVOdFBcmkxM&tbnid=8c_UAo3gH_220M%3A&vet=10ahUKEwiG1Me6kK3iAhWuY98KHdU9AaUQMwh6KAAwAA..i&w=500&h=200&bih=657&biw=1366&q=images&ved=0ahUKEwiG1Me6kK3iAhWuY98KHdU9AaUQMwh6KAAwAA&iact=mrc&uact=8",
-        "scores": [
-        "5",
-        "4",
-        "2",
-        "1",
-        "2",
-        "4",
-        "3",
-        "3",
-        "2",
-        "3"
-        ]
-        },
-        {
-        "name": "tabitha",
-        "photo": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F248797%2Fpexels-photo-248797.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D1%26w%3D500&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fnature%2F&docid=ShwNVOdFBcmkxM&tbnid=8c_UAo3gH_220M%3A&vet=10ahUKEwiG1Me6kK3iAhWuY98KHdU9AaUQMwh6KAAwAA..i&w=500&h=200&bih=657&biw=1366&q=images&ved=0ahUKEwiG1Me6kK3iAhWuY98KHdU9AaUQMwh6KAAwAA&iact=mrc&uact=8",
-        "scores": [
-        "5",
-        "4",
-        "2",
-        "1",
-        "2",
-        "4",
-        "3",
-        "3",
-        "2",
-        "3"
-        ]
         }
 ]
 
