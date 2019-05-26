@@ -7,7 +7,6 @@
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
@@ -31,11 +30,12 @@
                     <label for="user-name">Name (Required)</label>
                     <input type="text" class="form-control" id="user-name">
               </div>
+              <!-- <p>Link to Photo Image (Required)</p> -->
               <div class="custom-file">
-                    <label for="user-img">Link to Photo Image (Required)</label>
-                    <input type="text" class="form-control" id="user-img">
-                    <!-- <label class="custom-file-label" for="user-img">Link to Photo Image (Required)</label>
-                    <input type="file" class="custom-file-input" id="user-img"> -->
+                  <label for="user-img">Link to Photo Image (Required)</label>
+                  <input type="text" class="form-control" id="user-img">
+                    
+                    <!-- <label class="custom-file-label" for="user-img">Choose file</label> -->
               </div>
               <br>
               <br>
@@ -194,8 +194,6 @@
 
 
 <script type="text/javascript">
-
- 
   $(".submit").on("click", function(event) {
     event.preventDefault();
     var surveyArr = []
